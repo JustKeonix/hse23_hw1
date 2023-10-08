@@ -35,5 +35,9 @@ mate-pairs:
 ![image](https://github.com/JustKeonix/hse23_hw1/assets/24775932/f58b119b-c88d-48ca-a2ed-f2df85b37dca)
 ![image](https://github.com/JustKeonix/hse23_hw1/assets/24775932/4b799fcf-1c74-4373-ba7f-e84e466e9e0a)
 
+MultiQC:
+
+![image](https://github.com/JustKeonix/hse23_hw1/assets/24775932/e760ca05-d105-4cbb-ac3e-218c493593c1)
+
 
 
