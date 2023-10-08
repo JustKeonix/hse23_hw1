@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	MP_R1	/home/vmvinarskiy/hw1/MP_R1_fastqc.zip
+FastQC	all_sections	MP_R2	/home/vmvinarskiy/hw1/MP_R2_fastqc.zip
+FastQC	all_sections	R1	/home/vmvinarskiy/hw1/R1_fastqc.zip
+FastQC	all_sections	R2	/home/vmvinarskiy/hw1/R2_fastqc.zip
