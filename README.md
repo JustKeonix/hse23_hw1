@@ -81,7 +81,7 @@ n50 = 3834102\
 общяя длина гэпов: 5890\
 
 Уменьшим количество гэпов:\
-```platanus gap_close -o Pxut -c Pxut_scaffold.fa -IP1 R1.fq.trimmed R2.fq.trimmed -OP2 MP_R1.fq.int_trimmed MP_R2.fq.int_trimmed -t 4```\
+```platanus gap_close -o Pxut -c Pxut_scaffold.fa -IP1 R1.fq.trimmed R2.fq.trimmed -OP2 MP_R1.fq.int_trimmed MP_R2.fq.int_trimmed -t 4```
 
 Получившаяся статистика:\
 количестов скаффолдов: 67\
