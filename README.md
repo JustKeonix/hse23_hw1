@@ -62,12 +62,11 @@ MultiQC:
 
 platanus assemble -f R1.fq.trimmed R2.fq.trimmed -o Pxut 2> assemble.log
 
-По получившимся контигам найдём
+По получившейся сборке найдём статистику контигов\
+количестов контигов: 608\
+длина всез контигов: 3924881\
+самы длинный контиг: 179307\
 
-# Display the metrics
-total_contigs, total_length, longest_contig, n50
-
-(608, 3924881, 179307, 47797)
 
 
 
