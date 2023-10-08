@@ -39,5 +39,39 @@ MultiQC:
 
 ![image](https://github.com/JustKeonix/hse23_hw1/assets/24775932/e760ca05-d105-4cbb-ac3e-218c493593c1)
 
+Обрежем адаптеры:
+```platanus_trim R1.fq R2.fq```
+
+```platanus_internal_trim MP_R1.fq MP_R2.fq```
+
+Проверим насколько хорошо обрезались адаптеры с помощью MultiQC:
+
+```fastqc R1.fq.trimmed R2.fq.trimmed MP_R1.fq.int_trimmed MP_R2.fq.int_trimmed```
+
+```multiqc .```
+
+До обрезания адаптеров:
+
+![image](https://github.com/JustKeonix/hse23_hw1/assets/24775932/18708886-4b6a-446a-a7db-fdb4a52cdb41)
+
+После:
+
+![image](https://github.com/JustKeonix/hse23_hw1/assets/24775932/a3ad13fa-6f61-476e-92cb-8cf8eecf7bf4)
+
+Соберём контиги:
+
+platanus assemble -f R1.fq.trimmed R2.fq.trimmed -o Pxut 2> assemble.log
+
+По получившимся контигам найдём
+
+# Display the metrics
+total_contigs, total_length, longest_contig, n50
+
+(608, 3924881, 179307, 47797)
+
+
+
+
+
 
 
