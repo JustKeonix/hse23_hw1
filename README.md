@@ -60,14 +60,26 @@ MultiQC:
 
 Соберём контиги:
 
-platanus assemble -f R1.fq.trimmed R2.fq.trimmed -o Pxut 2> assemble.log
+```platanus assemble -f R1.fq.trimmed R2.fq.trimmed -o Pxut 2> assemble.log```
 
 По получившейся сборке найдём статистику контигов\
 количестов контигов: 608\
 длина всез контигов: 3924881\
 самы длинный контиг: 179307\
+n50 = 47797
 
+Соберём скаффолды:\
+```platanus scaffold -o Pxut -c Pxut_contig.fa -b Pxut_contigBubble.fa -IP1 R1.fq.trimmed R2.fq.trimmed -OP2 MP_R1.fq.int_trimmed MP_R2.fq.int_trimmed -t 4```\
+По получившейся сборке найдём статистику скаффолдов:\
+количестов скаффолдов: 67\
+длина всез скаффолдов: 3875453\
+самы длинный скаффолд: 3834102\
+n50 = 3834102\
+число гэпов: 75\
+общяя длина гэпов: 6145\
 
+Уменьшим количество гэпов:\
+```platanus gap_close -o Pxut -c Pxut_scaffold.fa -IP1 R1.fq.trimmed R2.fq.trimmed -OP2 MP_R1.fq.int_trimmed MP_R2.fq.int_trimmed -t 4```
 
 
 
